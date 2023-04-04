@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app: akp-dup-svc
+  name: akp-dup-svc
+spec:
+  ports:
+  - name: 4444-80
+    port: 4444
+    protocol: TCP
+    targetPort: 80
+  selector:
+    app: akp-dup-svc
+  type: ClusterIP
+status:
+  loadBalancer: {}
