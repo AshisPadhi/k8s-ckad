@@ -21,9 +21,9 @@ spec:
       containers:
       - image: nginx:alpine
         name: neptune-pod
-	resources:
+        resources:
           limits:
-            memory: 50Mi 
+            memory: "50Mi" 
           requests:
-            memory: 20Mi
+            memory: "20Mi"
 status: {}
